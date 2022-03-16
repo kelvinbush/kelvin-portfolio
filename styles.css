@@ -35,7 +35,6 @@ body {
 
 .nav_container {
   height: 5rem;
-  color: var(--color-primary);
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2rem;
@@ -46,8 +45,9 @@ body {
   justify-content: space-between;
 }
 
-.nav_container > h3 {
-  display: inline-block;
+.nav_container > a {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 .nav_container > *:hover {
