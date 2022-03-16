@@ -28,8 +28,9 @@ body {
   font-style: normal;
   min-height: 100vh;
   line-height: 2.4rem;
-  padding: 2rem;
   background-color: #fff;
+  color: var(--color-text);
+  text-align: left;
 }
 
 .nav {
@@ -39,6 +40,7 @@ body {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2rem;
+  padding: 2rem;
 }
 
 .nav_container {
@@ -55,4 +57,45 @@ body {
 
 .nav_container > *:hover {
   cursor: pointer;
+}
+
+.header {
+  background-image: url("assets/header-shapes mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.header > h1 {
+  color: var(--color-text-dark);
+  text-align: left;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  padding-top: 12rem;
+  margin-bottom: 1.6rem;
+  width: 60%;
+}
+
+.header > h4 {
+  font-weight: 500;
+  color: var(--color-primary-light);
+  text-transform: uppercase;
+  margin: 1.6rem 0;
+}
+
+.header_socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header_socials > a {
+  margin-right: 2.6rem;
+  height: 20px;
+}
+
+.medium-icon {
+  position: relative;
+  top: 0.3rem;
 }
