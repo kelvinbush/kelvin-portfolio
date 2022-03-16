@@ -68,14 +68,14 @@ body {
   font-size: 4rem;
   line-height: 5.2rem;
   padding-top: 7rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .headline > h4 {
   font-weight: 500;
   color: var(--color-primary-light);
   text-transform: uppercase;
-  margin: 1.6rem 0;
+  margin: 1.2rem 0;
 }
 
 .headline_socials {
