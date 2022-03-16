@@ -80,12 +80,13 @@ body {
 }
 
 .header_socials {
+  list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.header_socials > a {
+.header_socials > li {
   margin-right: 2.6rem;
   height: 20px;
 }
