@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #6070ff;
+  --color-primary-light: #7f8cff;
+  --color-text: #344563;
+  --color-text-dark: #172b4d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
