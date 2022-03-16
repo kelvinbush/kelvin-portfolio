@@ -18,7 +18,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 50%;
+  font-size: 65%;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2rem;
-  padding: 2rem;
+  padding: 2.4rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -54,39 +54,38 @@ body {
   cursor: pointer;
 }
 
-.header {
+.headline {
   background-image: url("assets/header-shapes mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem;
+  padding: 2.4rem;
 }
 
-.header > h1 {
+.headline > h1 {
   color: var(--color-text-dark);
   text-align: left;
   font-weight: 700;
   font-size: 4rem;
   line-height: 5.2rem;
-  padding-top: 12rem;
+  padding-top: 7rem;
   margin-bottom: 1.6rem;
-  width: 60%;
 }
 
-.header > h4 {
+.headline > h4 {
   font-weight: 500;
   color: var(--color-primary-light);
   text-transform: uppercase;
   margin: 1.6rem 0;
 }
 
-.header_socials {
+.headline_socials {
   list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.header_socials > li {
+.headline_socials > li {
   margin-right: 2.6rem;
   height: 20px;
 }
