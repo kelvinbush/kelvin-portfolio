@@ -51,7 +51,7 @@ body {
   text-decoration: none;
 }
 
-.nav_container > *:hover {
+.nav_container > nav {
   cursor: pointer;
 }
 
@@ -96,4 +96,109 @@ body {
 .medium-icon {
   position: relative;
   top: 0.3rem;
+}
+
+.works {
+  margin-top: 8rem;
+  padding: 2.4rem;
+  display: grid;
+}
+
+.works_article {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin-bottom: 80px;
+}
+
+.works_article > * {
+  padding: 0 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.works_article > img {
+  height: 22rem;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  padding-top: 1.6rem;
+}
+
+.works_article > h3 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: var(--color-text-dark);
+}
+
+.works_specs {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.works_specs > h6 {
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.works_specs > p {
+  color: #7a869a;
+}
+
+.works_specs > p::before {
+  content: url("assets/counter.svg");
+  display: inline;
+  width: 0.8rem;
+  height: 0.8rem;
+  object-fit: contain;
+  margin: 0 1.2rem;
+}
+
+.works_languages {
+  list-style: none;
+  display: flex;
+  column-gap: 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  color: var(--color-primary);
+}
+
+.works_languages > li {
+  padding: 0.4rem 1.2rem;
+  background: #ebebff;
+  border-radius: 0.8rem;
+}
+
+button {
+  border: 1px solid #6070ff;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  margin-top: 1rem;
+  margin-left: 1.6rem;
+  height: 48px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-primary-light);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
 }
