@@ -26,7 +26,6 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   font-style: normal;
-  min-height: 100vh;
   line-height: 2.4rem;
   background-color: #e5e5e5;
   color: var(--color-text);
@@ -44,6 +43,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav_container > a {
