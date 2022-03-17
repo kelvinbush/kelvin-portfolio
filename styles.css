@@ -61,7 +61,7 @@ body {
   background-size: cover;
   padding: 2.4rem 2.4rem 13.6rem 2.4rem;
   background-color: #fff;
-  border-bottom-left-radius: 25%;
+  border-bottom-left-radius: 150px;
 }
 
 .head-text {
@@ -206,4 +206,65 @@ button:hover {
 
 button:active {
   background: #2230d2;
+}
+
+.about {
+  background-color: #fff;
+  padding: 0 2.4rem 10rem 2.4rem;
+  display: grid;
+  border-top-right-radius: 150px;
+}
+
+#btn-resume {
+  margin-left: 0;
+  margin-bottom: 4.8rem;
+  margin-top: 2.2rem;
+}
+
+.language_container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  row-gap: 3.6rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #000;
+}
+
+.closed {
+  border-bottom: solid 1px #dfe1e6;
+  padding: 2.3rem 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.closed > img {
+  top: 2.5rem !important;
+}
+
+.language_container > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0.7rem;
+}
+
+.about_languages {
+  width: 100%;
+}
+
+.about_languages > li {
+  display: flex;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  height: 6.672rem;
+  column-gap: 1.6rem;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #253858;
 }
