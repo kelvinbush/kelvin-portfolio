@@ -10,7 +10,16 @@
 - HTML
 - CSS
 
-## Live Demo (Coming Soon...)
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+- Copy this link `https://github.com/kelvinbush/kelvin-portfolio.git`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/kelvinbush/kelvin-portfolio.git`.
+- Go to the repository folder in your command prompt `cd kelvin-portfolio`.
+- Run `npm install` to install the dev dependencies for linters.
 
 
 ## Authors
