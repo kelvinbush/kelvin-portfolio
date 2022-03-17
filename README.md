@@ -1,56 +1,34 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Kelvin Bush Portfolio
 
-> Description the project.
+> This is a simple website to show-case my skills as a software developer.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML
+- CSS
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+- Copy this link `https://github.com/kelvinbush/kelvin-portfolio.git`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/kelvinbush/kelvin-portfolio.git`.
+- Go to the repository folder in your command prompt `cd kelvin-portfolio`.
+- Run `npm install` to install the dev dependencies for linters.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Kelvin Bush**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@kelvinbush](https://github.com/kelvinbush)
+- Twitter: [@kelvin_bush_](https://twitter.com/kelvin_bush_)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kelvin-wachiye-04b469173/)
 
 ## 🤝 Contributing
 
@@ -61,12 +39,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
