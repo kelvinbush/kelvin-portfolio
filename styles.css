@@ -30,6 +30,7 @@ body {
   background-color: #e5e5e5;
   color: var(--color-text);
   text-align: left;
+  
 }
 
 .nav_container {
@@ -86,10 +87,10 @@ body {
 }
 
 .socials {
-  list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  list-style: none;
 }
 
 .socials > li {
@@ -165,7 +166,6 @@ body {
 }
 
 .works_languages {
-  list-style: none;
   display: flex;
   column-gap: 0.8rem;
   font-weight: 500;
@@ -179,6 +179,7 @@ body {
   padding: 0.4rem 1.2rem;
   background: #ebebff;
   border-radius: 0.8rem;
+  list-style: none;
 }
 
 button {
