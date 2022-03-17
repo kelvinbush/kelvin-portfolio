@@ -64,7 +64,7 @@ body {
   border-bottom-left-radius: 25%;
 }
 
-.headline > h1 {
+.head-text {
   color: var(--color-text-dark);
   text-align: left;
   font-weight: 700;
@@ -74,21 +74,25 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.headline > h4 {
+.head-text > span {
+  display: block;
+}
+
+.connect {
   font-weight: 500;
   color: var(--color-primary-light);
   text-transform: uppercase;
   margin: 1.2rem 0;
 }
 
-.headline_socials {
+.socials {
   list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.headline_socials > li {
+.socials > li {
   margin-right: 2.6rem;
   height: 20px;
 }
@@ -189,6 +193,7 @@ button {
   color: #396df2;
   margin-top: 1rem;
   margin-left: 1.6rem;
+  padding: 0 1.6rem;
   height: 48px;
   cursor: pointer;
 }
