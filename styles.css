@@ -165,8 +165,6 @@ body {
 }
 
 .works_languages {
-  display: flex;
-  column-gap: 0.8rem;
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -179,6 +177,8 @@ body {
   background: #ebebff;
   border-radius: 0.8rem;
   list-style: none;
+  float: left;
+  margin-right: 0.8rem;
 }
 
 button {
