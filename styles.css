@@ -281,6 +281,7 @@ button:active {
   line-height: 2.8rem;
   color: #ebebff;
   padding: 10.3rem 2.4rem;
+  padding-bottom: 4.5rem;
 }
 
 .contact h2 {
@@ -311,4 +312,26 @@ input:focus {
   font-size: 1.7rem;
   line-height: 2rem;
   color: var(--color-text-dark);
+}
+
+#submit-button {
+  align-self: flex-start;
+}
+
+#text-area {
+  display: flex;
+}
+
+#text-area textarea {
+  flex: 1;
+  border-radius: 0.8rem;
+  padding: 1.5rem 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  height: 17rem;
+}
+
+#submit-input {
+  margin: 0;
+  margin-top: 0.3rem;
 }
