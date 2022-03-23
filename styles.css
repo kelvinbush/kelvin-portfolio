@@ -238,9 +238,12 @@ button:active {
 
 .about {
   background-color: #fff;
+  border-top-right-radius: 150px;
+}
+
+.about_container {
   padding: 0 2.4rem 10rem 2.4rem;
   display: grid;
-  border-top-right-radius: 150px;
 }
 
 #btn-resume {
@@ -261,9 +264,21 @@ button:active {
   color: #000;
 }
 
+.open > p {
+  padding-left: 3rem;
+}
+
+.about_languages {
+  width: 100%;
+}
+
+.closed > .about_languages {
+  display: none;
+}
+
 .closed {
   border-bottom: solid 1px #dfe1e6;
-  padding: 2.3rem 0;
+  padding: 2.3rem 3rem;
   cursor: pointer;
   position: relative;
 }
@@ -274,13 +289,10 @@ button:active {
 
 .language_container > img {
   position: absolute;
-  right: 0;
+  right: 3rem;
   bottom: 0;
   top: 0.7rem;
-}
-
-.about_languages {
-  width: 100%;
+  cursor: pointer;
 }
 
 .about_languages > li {
@@ -428,5 +440,33 @@ textarea:focus {
     padding: 2.4rem;
     height: 100%;
     object-fit: contain;
+  }
+
+  .about_container {
+    grid-template-columns: 1fr 1.5fr;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .about_container > ul {
+    padding-top: 7rem;
+    margin-left: 3.7rem;
+  }
+
+  .about_languages > * {
+    float: left;
+  }
+
+  .about_languages > li {
+    flex-direction: column;
+    width: 11rem;
+    height: 11rem;
+    align-items: flex-start;
+    padding: 1.2rem;
+    row-gap: 1.6rem;
+  }
+
+  .about_languages > li:not(:last-child) {
+    margin-right: 1.2rem;
   }
 }
