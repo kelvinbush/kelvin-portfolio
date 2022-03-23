@@ -125,6 +125,7 @@ header {
   margin-top: 8rem;
   padding: 2.4rem;
   display: grid;
+  max-width: 100rem;
 }
 
 .works_article {
@@ -134,20 +135,28 @@ header {
   margin-bottom: 80px;
 }
 
-.works_article > * {
+.reverse img {
+  order: 1;
+}
+
+.works_specs > * {
+  padding: 0 !important;
+}
+
+.works_article div > * {
   padding: 0 1.6rem;
   margin-bottom: 1.2rem;
 }
 
 .works_article > img {
-  height: 22rem;
+  height: auto;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
-  padding-top: 1.6rem;
+  padding: 1.6rem;
 }
 
-.works_article > h3 {
+.works_article div > h3 {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.4rem;
@@ -399,5 +408,25 @@ textarea:focus {
 
   .headline-container > p {
     width: 80%;
+  }
+
+  .works {
+    margin: 14rem auto;
+  }
+
+  .works_article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40rem;
+  }
+
+  .article_description {
+    padding: 2.4rem;
+  }
+
+  .works_article img {
+    padding: 2.4rem;
+    height: 100%;
+    object-fit: contain;
   }
 }
