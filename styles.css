@@ -469,4 +469,25 @@ textarea:focus {
   .about_languages > li:not(:last-child) {
     margin-right: 1.2rem;
   }
+
+  .contact .container {
+    background-image: url("assets/contact-background.svg");
+    background-position: top 5rem right;
+    background-size: contain;
+    padding-top: 14rem;
+  }
+
+  .contact form {
+    padding-top: 4rem;
+    row-gap: 2.7rem;
+  }
+
+  #submit-button {
+    align-self: center;
+  }
+
+  .contact .container > * {
+    max-width: 56.9rem;
+    margin: 0 auto;
+  }
 }
