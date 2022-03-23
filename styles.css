@@ -32,6 +32,11 @@ body {
   text-align: left;
 }
 
+header {
+  background-color: #fff;
+  width: 100%;
+}
+
 .nav_container {
   height: 5rem;
   font-weight: 700;
@@ -39,11 +44,11 @@ body {
   line-height: 2rem;
   padding: 2.4rem;
   width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  font-family: 'Inter', sans-serif;
 }
 
 .nav_container > a {
@@ -51,8 +56,17 @@ body {
   text-decoration: none;
 }
 
-.nav_container > nav {
+.nav_container > img {
   cursor: pointer;
+}
+
+.nav_links_container {
+  display: none;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 .headline {
@@ -62,6 +76,11 @@ body {
   padding: 2.4rem 2.4rem 13.6rem 2.4rem;
   background-color: #fff;
   border-bottom-left-radius: 150px;
+}
+
+.headline-container {
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 .head-text {
@@ -106,6 +125,7 @@ body {
   margin-top: 8rem;
   padding: 2.4rem;
   display: grid;
+  max-width: 100rem;
 }
 
 .works_article {
@@ -115,20 +135,28 @@ body {
   margin-bottom: 80px;
 }
 
-.works_article > * {
+.reverse img {
+  order: 1;
+}
+
+.works_specs > * {
+  padding: 0 !important;
+}
+
+.works_article div > * {
   padding: 0 1.6rem;
   margin-bottom: 1.2rem;
 }
 
 .works_article > img {
-  height: 22rem;
+  height: auto;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
-  padding-top: 1.6rem;
+  padding: 1.6rem;
 }
 
-.works_article > h3 {
+.works_article div > h3 {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.4rem;
@@ -210,9 +238,12 @@ button:active {
 
 .about {
   background-color: #fff;
+  border-top-right-radius: 150px;
+}
+
+.about_container {
   padding: 0 2.4rem 10rem 2.4rem;
   display: grid;
-  border-top-right-radius: 150px;
 }
 
 #btn-resume {
@@ -233,9 +264,21 @@ button:active {
   color: #000;
 }
 
+.open > p {
+  padding-left: 3rem;
+}
+
+.about_languages {
+  width: 100%;
+}
+
+.closed > .about_languages {
+  display: none;
+}
+
 .closed {
   border-bottom: solid 1px #dfe1e6;
-  padding: 2.3rem 0;
+  padding: 2.3rem 3rem;
   cursor: pointer;
   position: relative;
 }
@@ -246,13 +289,10 @@ button:active {
 
 .language_container > img {
   position: absolute;
-  right: 0;
+  right: 3rem;
   bottom: 0;
   top: 0.7rem;
-}
-
-.about_languages {
-  width: 100%;
+  cursor: pointer;
 }
 
 .about_languages > li {
@@ -340,4 +380,114 @@ textarea:focus {
 
 #submit-input {
   margin: 0.3rem 0 0;
+}
+
+@media screen and (min-width: 62em) {
+  header {
+    position: fixed;
+    z-index: 2;
+    height: 7.2rem;
+  }
+
+  .nav_links_container {
+    display: flex;
+    list-style: none;
+    column-gap: 3.2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  #nav_toggle {
+    display: none;
+  }
+
+  .headline {
+    position: relative;
+    top: 7.2rem;
+    background-image: url("assets/header-bg.svg");
+    background-size: contain;
+    background-position: center;
+    min-height: 90vh;
+  }
+
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8rem;
+    padding-left: 7rem;
+  }
+
+  .headline-container > p {
+    width: 80%;
+  }
+
+  .works {
+    margin: 14rem auto;
+  }
+
+  .works_article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40rem;
+  }
+
+  .article_description {
+    padding: 2.4rem;
+  }
+
+  .works_article img {
+    padding: 2.4rem;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .about_container {
+    grid-template-columns: 1fr 1.5fr;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .about_container > ul {
+    padding-top: 7rem;
+    margin-left: 3.7rem;
+  }
+
+  .about_languages > * {
+    float: left;
+  }
+
+  .about_languages > li {
+    flex-direction: column;
+    width: 11rem;
+    height: 11rem;
+    align-items: flex-start;
+    padding: 1.2rem;
+    row-gap: 1.6rem;
+  }
+
+  .about_languages > li:not(:last-child) {
+    margin-right: 1.2rem;
+  }
+
+  .contact .container {
+    background-image: url("assets/contact-background.svg");
+    background-position: top 5rem right;
+    background-size: contain;
+    padding-top: 14rem;
+  }
+
+  .contact form {
+    padding-top: 4rem;
+    row-gap: 2.7rem;
+  }
+
+  #submit-button {
+    align-self: center;
+  }
+
+  .contact .container > * {
+    max-width: 56.9rem;
+    margin: 0 auto;
+  }
 }
