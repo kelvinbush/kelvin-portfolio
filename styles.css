@@ -382,7 +382,7 @@ textarea:focus {
   margin: 0.3rem 0 0;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 62em) {
   header {
     position: fixed;
     z-index: 2;
