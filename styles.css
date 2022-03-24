@@ -244,7 +244,7 @@ button {
   padding: 0 1.6rem;
   height: 48px;
   cursor: pointer;
-  transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in-out;
 }
 
 button:hover {
