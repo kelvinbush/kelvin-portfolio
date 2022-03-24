@@ -1,4 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+[![Linters](https://github.com/kelvinbush/kelvin-portfolio/actions/workflows/linters.yml/badge.svg)](https://github.com/kelvinbush/kelvin-portfolio/actions/workflows/linters.yml)
+[![pages-build-deployment](https://github.com/kelvinbush/kelvin-portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kelvinbush/kelvin-portfolio/actions/workflows/pages/pages-build-deployment)
 
 # Kelvin Bush Portfolio
 
