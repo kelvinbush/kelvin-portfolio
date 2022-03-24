@@ -436,7 +436,8 @@ textarea:focus {
     background-image: url("assets/header-bg.svg");
     background-size: contain;
     background-position: center;
-    min-height: 90vh;
+    height: 90vh;
+    max-height: 80rem;
   }
 
   .headline-container {
@@ -452,7 +453,7 @@ textarea:focus {
   }
 
   .works {
-    margin: 14rem auto;
+    margin: 14rem auto 3rem auto;
   }
 
   .works_article {
