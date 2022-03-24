@@ -62,6 +62,7 @@ header {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -80,6 +81,7 @@ header {
   color: var(--color-text);
   display: block;
 }
+
 .nav_link:hover {
   transition: all 0.5s ease-in-out;
   transform: translateY(-2px);
@@ -172,10 +174,6 @@ header {
   border-radius: 8px;
   padding: 1.6rem;
   transition: all 0.4s ease-in-out;
-}
-
-.works_article > img:hover {
-  transform: scale(1.05);
 }
 
 .works_article div > h3 {
@@ -517,4 +515,8 @@ textarea:focus {
     max-width: 56.9rem;
     margin: 0 auto;
   }
+}
+
+.works_article > img:hover {
+  transform: scale(1.05);
 }
