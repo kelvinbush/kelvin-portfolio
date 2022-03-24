@@ -54,6 +54,13 @@ header {
 .nav_container > a {
   color: var(--color-primary);
   text-decoration: none;
+  animation-name: rotate;
+  animation-duration: 2s;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 
 .nav_container > img {
