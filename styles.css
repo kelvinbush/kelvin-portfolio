@@ -154,6 +154,11 @@ header {
   object-fit: cover;
   border-radius: 8px;
   padding: 1.6rem;
+  transition: all 0.4s ease-out;
+}
+
+.works_article > img:hover {
+  transform: scale(1.05);
 }
 
 .works_article div > h3 {
@@ -224,6 +229,7 @@ button {
   padding: 0 1.6rem;
   height: 48px;
   cursor: pointer;
+  transition: all 0.4s ease-in;
 }
 
 button:hover {
