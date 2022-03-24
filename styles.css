@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   font-style: normal;
@@ -59,8 +59,12 @@ header {
 }
 
 @keyframes rotate {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav_container > img {
@@ -74,6 +78,12 @@ header {
 .nav_link {
   text-decoration: none;
   color: var(--color-text);
+  display: block;
+}
+.nav_link:hover {
+  transition: all 0.5s;
+  transform: translateY(-2px);
+  color: #2230d2;
 }
 
 .headline {
@@ -401,11 +411,11 @@ textarea:focus {
     z-index: 2;
     height: 7.2rem;
   }
-  
+
   .nav_container {
     height: 100%;
   }
-  
+
   .nav_links_container {
     display: flex;
     list-style: none;
@@ -413,11 +423,11 @@ textarea:focus {
     font-weight: 500;
     font-size: 1.5rem;
   }
-  
+
   #nav_toggle {
     display: none;
   }
-  
+
   .headline {
     position: relative;
     top: 7.2rem;
@@ -426,7 +436,7 @@ textarea:focus {
     background-position: center;
     min-height: 90vh;
   }
-  
+
   .headline-container {
     display: flex;
     flex-direction: column;
@@ -434,46 +444,46 @@ textarea:focus {
     margin-top: 8rem;
     padding-left: 7rem;
   }
-  
+
   .headline-container > p {
     width: 80%;
   }
-  
+
   .works {
     margin: 14rem auto;
   }
-  
+
   .works_article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 40rem;
   }
-  
+
   .article_description {
     padding: 2.4rem;
   }
-  
+
   .works_article img {
     padding: 2.4rem;
     height: 100%;
     object-fit: contain;
   }
-  
+
   .about_container {
     grid-template-columns: 1fr 1.5fr;
     max-width: 100rem;
     margin: 0 auto;
   }
-  
+
   .about_container > ul {
     padding-top: 7rem;
     margin-left: 3.7rem;
   }
-  
+
   .about_languages > * {
     float: left;
   }
-  
+
   .about_languages > li {
     flex-direction: column;
     width: 11rem;
@@ -482,27 +492,27 @@ textarea:focus {
     padding: 1.2rem;
     row-gap: 1.6rem;
   }
-  
+
   .about_languages > li:not(:last-child) {
     margin-right: 1.2rem;
   }
-  
+
   .contact .container {
     background-image: url("assets/contact-background.svg");
     background-position: top 5rem right;
     background-size: contain;
     padding-top: 14rem;
   }
-  
+
   .contact form {
     padding-top: 4rem;
     row-gap: 2.7rem;
   }
-  
+
   #submit-button {
     align-self: center;
   }
-  
+
   .contact .container > * {
     max-width: 56.9rem;
     margin: 0 auto;
