@@ -316,6 +316,10 @@ button:active {
   cursor: pointer;
 }
 
+.works_article > img:hover {
+  transform: scale(1.05);
+}
+
 .about_languages > li {
   display: flex;
   align-items: center;
@@ -515,8 +519,4 @@ textarea:focus {
     max-width: 56.9rem;
     margin: 0 auto;
   }
-}
-
-.works_article > img:hover {
-  transform: scale(1.05);
 }
