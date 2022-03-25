@@ -80,10 +80,10 @@ header {
   text-decoration: none;
   color: var(--color-text);
   display: block;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav_link:hover {
-  transition: all 0.5s ease-in-out;
   transform: translateY(-2px);
   color: #2230d2;
 }
