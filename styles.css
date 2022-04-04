@@ -89,7 +89,7 @@ header {
 }
 
 .headline {
-  background-image: url("assets/img/header-shapes mobile.svg");
+  background-image: url("assets/header-shapes mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2.4rem 2.4rem 13.6rem 2.4rem;
@@ -204,7 +204,7 @@ header {
 }
 
 .works_specs > p::before {
-  content: url("assets/img/counter.svg");
+  content: url("assets/counter.svg");
   display: inline;
   width: 0.8rem;
   height: 0.8rem;
@@ -345,7 +345,7 @@ button:active {
 .contact .container {
   padding: 10.3rem 2.4rem 4.5rem;
   border-top-left-radius: 15rem;
-  background-image: url("assets/img/contact-form-shapes-mobile.svg");
+  background-image: url("assets/contact-form-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -433,7 +433,7 @@ textarea:focus {
   .headline {
     position: relative;
     top: 7.2rem;
-    background-image: url("assets/img/header-bg.svg");
+    background-image: url("assets/header-bg.svg");
     background-size: contain;
     background-position: center;
     height: 90vh;
@@ -501,7 +501,7 @@ textarea:focus {
   }
 
   .contact .container {
-    background-image: url("assets/img/contact-background.svg");
+    background-image: url("assets/contact-background.svg");
     background-position: top 5rem right;
     background-size: contain;
     padding-top: 14rem;
