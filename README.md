@@ -12,6 +12,10 @@
 - HTML
 - CSS
 
+## Live Demo
+
+[Live Demo Link](http://kelvinbush.me/kelvin-portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
