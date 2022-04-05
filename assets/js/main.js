@@ -126,3 +126,10 @@ worksArticles.forEach((article) => {
     });
   });
 });
+
+window.addEventListener('click', (e) => {
+  if (e.target === modalSection) {
+  modalSection.classList.remove('modal_active');
+  }
+  });
+  
