@@ -674,5 +674,13 @@ textarea:focus {
     margin: 0 auto;
   }
 
-  
+  .modal__content {
+    width: 70%;
+  }
+
+  .modal__article > .modal__divider {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2.2rem;
+  }
 }
