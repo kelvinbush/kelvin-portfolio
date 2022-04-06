@@ -438,7 +438,7 @@ textarea:focus {
   outline: none;
 }
 
-#text-area textarea {
+#text-area > textarea {
   flex: 1;
   border-radius: 0.8rem;
   padding: 1.5rem 1.6rem;
@@ -466,7 +466,18 @@ textarea:focus {
 }
 
 .modal_active {
+  transition: all 0.3s ease-in-out;
   display: block;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .modal__content {
@@ -480,6 +491,7 @@ textarea:focus {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
+  animation: modalopen 1s;
 }
 
 .modal__article {
@@ -683,4 +695,12 @@ textarea:focus {
     grid-template-columns: 2fr 1fr;
     column-gap: 2.2rem;
   }
+}
+
+.status__error {
+  color: red;
+}
+
+.status__success {
+  color: white;
 }
