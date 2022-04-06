@@ -150,22 +150,12 @@ const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-  const formData = {
-    name,
-    email,
-    message,
-  };
   if (email !== email.toLowerCase()) {
     setStatusText(false);
     return;
   }
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://formspree.io/f/xqknloew');
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.send(JSON.stringify(formData));
+  form.submit();
   form.reset();
   setStatusText(true);
 });
