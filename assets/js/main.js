@@ -134,15 +134,15 @@ window.addEventListener('click', (e) => {
 });
 
 function setStatusText(complete) {
-  const statusText = document.getElementById('error-message')
+  const statusText = document.getElementById('error-message');
   if (complete) {
-    statusText.classList.remove('status__error')
-    statusText.classList.add('status__success')
-    statusText.innerHTML = 'Thank you for your message!'
+    statusText.classList.remove('status__error');
+    statusText.classList.add('status__success');
+    statusText.innerHTML = 'Thank you for your message!';
   } else {
-    statusText.classList.remove('status__success')
-    statusText.classList.add('status__error')
-    statusText.innerHTML = 'Please enter a valid email in lowercase.'
+    statusText.classList.remove('status__success');
+    statusText.classList.add('status__error');
+    statusText.innerHTML = 'Please enter a valid email in lowercase.';
   }
 }
 
@@ -159,7 +159,7 @@ form.addEventListener('submit', (e) => {
     message,
   };
   if (email !== email.toLowerCase()) {
-    setStatusText(false)
+    setStatusText(false);
     return;
   }
   const xhr = new XMLHttpRequest();
