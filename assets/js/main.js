@@ -132,3 +132,16 @@ window.addEventListener('click', (e) => {
     modalSection.classList.remove('modal_active');
   }
 });
+
+function setStatusText(complete) {
+  const statusText = document.getElementById('error-message')
+  if (complete) {
+    statusText.classList.remove('status__error')
+    statusText.classList.add('status__success')
+    statusText.innerHTML = 'Thank you for your message!'
+  } else {
+    statusText.classList.remove('status__success')
+    statusText.classList.add('status__error')
+    statusText.innerHTML = 'Please enter a valid email in lowercase.'
+  }
+}
