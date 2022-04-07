@@ -151,11 +151,20 @@ const form = document.getElementById('contact-form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.getElementById('email').value;
+  const name = document.getElementById('name').value;
+  const message = document.getElementById('message').value;
+  const formData = {
+    email,
+    name,
+    message,
+  };
   if (email !== email.toLowerCase()) {
     setStatusText(false);
     return;
   }
+  localStorage.setItem('userInfo', JSON.stringify(formData));
   form.submit();
   form.reset();
   setStatusText(true);
 });
+
