@@ -168,3 +168,13 @@ form.addEventListener('submit', (e) => {
   setStatusText(true);
 });
 
+function getUserInfo() {
+  const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  if (userInfo) {
+    document.getElementById('email').value = userInfo.email;
+    document.getElementById('name').value = userInfo.name;
+    document.getElementById('message').value = userInfo.message;
+  }
+}
+
+getUserInfo();
