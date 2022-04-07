@@ -159,3 +159,36 @@ form.addEventListener('submit', (e) => {
   form.reset();
   setStatusText(true);
 });
+
+const inputs = document.querySelectorAll('input');
+inputs.forEach((input) => {
+  input.addEventListener('change', (e) => {
+    let userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    if (!userInfo) {
+      userInfo = { name: '', email: '', message: '' };
+    }
+    userInfo[e.target.name] = e.target.value;
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+  });
+});
+
+const textMessage = document.getElementById('message');
+textMessage.addEventListener('change', (e) => {
+  let userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  if (!userInfo) {
+    userInfo = { name: '', email: '', message: '' };
+  }
+  userInfo.message = e.target.value;
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+});
+
+function getUserInfo() {
+  const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  if (userInfo) {
+    document.getElementById('email').value = userInfo.email;
+    document.getElementById('name').value = userInfo.name;
+    document.getElementById('message').value = userInfo.message;
+  }
+}
+
+getUserInfo();
